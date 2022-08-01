@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-2)v51!8ebqgir&$5w^=nkh(6q-rir1cutx16$%-n906)5fgtng
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['quiz-python.sdacademy.xyz', '127.0.0.1']
 
 
 # Application definition
@@ -126,3 +126,7 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+SESSION_ENGINE = 'django.contrib.sessions.backends.file'
+
+SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
